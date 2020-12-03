@@ -1,8 +1,9 @@
-
+const dotenv = require('dotenv');
+dotenv.config();
 const express = require('express');
 const shortid = require('shortid');
 const cors = require('cors');
-
+const port = process.env.PORT || 4000;
 const server = express();
 
 server.use(express.json());
@@ -147,7 +148,11 @@ server.use('*', (req, res) => {
     res.status(404).json({ message: 'not found' });
 })
 
+server.use('/api/*', (_, res) => {
+    res.json({ data: 'hello' });
+})
+
 server.listen(5000, () => {
-    console.log('listening on port 5000');
+    console.log(`listening on port ${port}`);
 })
 

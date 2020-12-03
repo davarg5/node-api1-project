@@ -4,8 +4,8 @@
   "description": "- Building a RESTful API.\r - Performing CRUD operations.\r - Writing API endpoints.",
   "main": "index.js",
   "scripts": {
-    "server" : "nodemon index.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "server": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/davarg5/node-api1-project/issues"
   },
-  "homepage": "https://github.com/davarg5/node-api1-project#readme"
+  "homepage": "https://github.com/davarg5/node-api1-project#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
 }
