@@ -152,7 +152,7 @@ server.use('/api/*', (_, res) => {
     res.json({ data: 'hello' });
 })
 
-server.listen(5000, () => {
+server.listen(port, () => {
     console.log(`listening on port ${port}`);
 })
 
